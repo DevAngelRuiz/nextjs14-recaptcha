@@ -7,6 +7,7 @@ export async function POST(request: Request, response: Response) {
     const postData = await request.json();
 
     const { gRecaptchaToken } = postData;
+    console.log("gRecaptchaToken:", gRecaptchaToken);
 
     let res;
 
